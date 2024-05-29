@@ -3116,8 +3116,9 @@ val_evaluator = dict(
     type='mmdet.CocoMetric',
     proposal_nums=(100, 1, 10),
     ann_file= data_root + 'annotations/val.json',
+    dataset = '',
     metric='bbox')
-test_evaluator = val_evaluator = dict(
+test_evaluator = dict(
     type='mmdet.CocoMetric',
     proposal_nums=(100, 1, 10),
     ann_file=data_root + 'annotations/test.json',
