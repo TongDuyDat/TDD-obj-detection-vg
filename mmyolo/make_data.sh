@@ -9,9 +9,9 @@ FILE2="file2.zip"
 GDRIVE_FILE_ID="1_BohXC0lltPB3cw8S62n8mQ1Z-eOGUtp"
 GDRIVE_FILE="annotations.zip"
 
-DEST_DIR="data1/vg"
+DEST_DIR="data/vg"
 
-IMAGES_DIR="data1/vg/images"
+IMAGES_DIR="data/vg/images"
 
 mkdir -p $DEST_DIR
 mkdir -p $IMAGES_DIR
