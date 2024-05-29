@@ -1,6 +1,6 @@
 _base_ = "./yolov8_s_syncbn_fast_8xb16-500e_coco.py"
 
-data_root = "D:/NCKH/ImageCaption/Dataset/Visual_Genome/VG_Dataset/"
+data_root = "data/vg/"
 class_name = (
     "man",
     "window",
