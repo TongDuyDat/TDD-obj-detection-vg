@@ -1,4 +1,4 @@
-# YOLOv8 on Visual Genoem Dataser
+# YOLOv8 on Visual Genoem Dataset
 
 ## Giới Thiệu
 
