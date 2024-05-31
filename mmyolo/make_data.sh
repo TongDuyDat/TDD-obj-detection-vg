@@ -4,16 +4,15 @@
 URL1="https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip"
 URL2="https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip"
 
-FILE1="file1.zip"
-FILE2="file2.zip"
+FILE1="images.zip"
+FILE2="images2.zip"
 
 GDRIVE_FILE_ID_FILE_IMG1="1hAJDDyVH1asiZgh0w21IPVJyPVewB7Ji"
 GDRIVE_FILE_ID_FILE_IMG2="1aHM6xgDG7PL3igcKYO0bjLnES6UaOYlW"
 
-gdown https://drive.google.com/uc?id=$GDRIVE_FILE_ID_FILE_IMG1 -O $FILE1
-gdown https://drive.google.com/uc?id=$GDRIVE_FILE_ID_FILE_IMG2 -O $FILE2
+gdown --id $GDRIVE_FILE_ID_FILE_IMG1
+gdown --id $GDRIVE_FILE_ID_FILE_IMG2
 
-GDRIVE_FILE_ID="1_BohXC0lltPB3cw8S62n8mQ1Z-eOGUtp"
 GDRIVE_FILE="annotations.zip"
 
 DEST_DIR="data/vg"
