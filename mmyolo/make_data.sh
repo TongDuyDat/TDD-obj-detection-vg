@@ -6,6 +6,13 @@ URL2="https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip"
 
 FILE1="file1.zip"
 FILE2="file2.zip"
+
+GDRIVE_FILE_ID_FILE_IMG1="1hAJDDyVH1asiZgh0w21IPVJyPVewB7Ji"
+GDRIVE_FILE_ID_FILE_IMG2="1aHM6xgDG7PL3igcKYO0bjLnES6UaOYlW"
+
+gdown https://drive.google.com/uc?id=$GDRIVE_FILE_ID_FILE_IMG1 -O $FILE1
+gdown https://drive.google.com/uc?id=$GDRIVE_FILE_ID_FILE_IMG2 -O $FILE2
+
 GDRIVE_FILE_ID="1_BohXC0lltPB3cw8S62n8mQ1Z-eOGUtp"
 GDRIVE_FILE="annotations.zip"
 
@@ -17,36 +24,36 @@ mkdir -p $DEST_DIR
 mkdir -p $IMAGES_DIR
 
 
-wget -O $FILE1 $URL1
+# wget -O $FILE1 $URL1
 
-if [ $? -eq 0 ]; then
-    echo "File $FILE1 đã được tải về thành công."
-else
-    echo "Có lỗi khi tải file $FILE1."
-    exit 1
-fi
+# if [ $? -eq 0 ]; then
+#     echo "File $FILE1 đã được tải về thành công."
+# else
+#     echo "Có lỗi khi tải file $FILE1."
+#     exit 1
+# fi
 
 
 unzip -o $FILE1 -d $DEST_DIR
 
 
-if [ $? -eq 0 ]; then
-    echo "File $FILE1 đã được giải nén thành công vào thư mục $DEST_DIR."
-else
-    echo "Có lỗi khi giải nén file $FILE1."
-    exit 1
-fi
+# if [ $? -eq 0 ]; then
+#     echo "File $FILE1 đã được giải nén thành công vào thư mục $DEST_DIR."
+# else
+#     echo "Có lỗi khi giải nén file $FILE1."
+#     exit 1
+# fi
 
 
 # wget -O $FILE2 $URL2
 
 
-if [ $? -eq 0 ]; then
-    echo "File $FILE2 đã được tải về thành công."
-else
-    echo "Có lỗi khi tải file $FILE2."
-    exit 1
-fi
+# if [ $? -eq 0 ]; then
+#     echo "File $FILE2 đã được tải về thành công."
+# else
+#     echo "Có lỗi khi tải file $FILE2."
+#     exit 1
+# fi
 
 
 unzip -o $FILE2 -d $DEST_DIR
