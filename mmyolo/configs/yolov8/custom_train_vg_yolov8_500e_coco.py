@@ -3069,7 +3069,7 @@ metainfo = dict(classes=class_name, palette=[(20, 220, 60)])
 close_mosaic_epochs = 5
 
 max_epochs = 100
-train_batch_size_per_gpu = 128
+train_batch_size_per_gpu = 32
 train_num_workers = 1
 
 load_from = "https://download.openmmlab.com/mmyolo/v0/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco/yolov8_s_syncbn_fast_8xb16-500e_coco_20230117_180101-5aa5f0f1.pth"  # noqa
