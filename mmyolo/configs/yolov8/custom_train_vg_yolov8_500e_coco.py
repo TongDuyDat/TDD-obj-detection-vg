@@ -3066,7 +3066,7 @@ class_name = (
 num_classes = len(class_name)
 metainfo = dict(classes=class_name, palette=[(20, 220, 60)])
 
-close_mosaic_epochs = 5
+close_mosaic_epochs = 10
 
 max_epochs = 100
 train_batch_size_per_gpu = 32
@@ -3124,11 +3124,11 @@ test_evaluator = dict(
     metric='bbox')
 
 default_hooks = dict(
-    checkpoint=dict(interval=1000, max_keep_ckpts=2, save_best="auto"),
+    checkpoint=dict(interval=100, max_keep_ckpts=2, save_best="auto"),
     # The warmup_mim_iter parameter is critical.
     # The default value is 1000 which is not suitable for cat datasets.
     param_scheduler=dict(max_epochs=max_epochs, warmup_mim_iter=10),
-    logger=dict(type="LoggerHook", interval=5),
+    logger=dict(type="LoggerHook", interval=100),
 )
-train_cfg = dict(max_epochs=max_epochs, val_interval=1000)
+train_cfg = dict(max_epochs=max_epochs, val_interval=100)
 # visualizer = dict(vis_backends = [dict(type='LocalVisBackend'), dict(type='WandbVisBackend')]) # noqa
