@@ -3128,7 +3128,7 @@ default_hooks = dict(
     # The warmup_mim_iter parameter is critical.
     # The default value is 1000 which is not suitable for cat datasets.
     param_scheduler=dict(max_epochs=max_epochs, warmup_mim_iter=10),
-    logger=dict(type="LoggerHook", interval=100),
+    logger=dict(type="LoggerHook", interval=1000),
 )
 train_cfg = dict(max_epochs=max_epochs, val_interval=100)
 # visualizer = dict(vis_backends = [dict(type='LocalVisBackend'), dict(type='WandbVisBackend')]) # noqa
